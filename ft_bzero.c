@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gdel-cas <gdel-cas@student.42madrid>       +#+  +:+       +#+        */
+/*   By: gdel-cas <gdel-cas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 16:05:59 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/12 13:21:57 by gdel-cas         ###   ########.fr       */
+/*   Created: 2023/09/12 18:15:39 by gdel-cas          #+#    #+#             */
+/*   Updated: 2023/09/12 18:47:01 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint (int c)
+void    ft_bzero(void *s, size_t n)
 {
-	if (c > 31 && c < 127)
-		return (1);
-	else 
-		return (0);
+    int i;
+    char    *ptr;
+    
+    i = 
 }
