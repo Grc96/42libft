@@ -6,10 +6,11 @@
 /*   By: gdel-cas <gdel-cas@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 15:15:35 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/15 17:15:07 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/09/18 17:50:40 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*#include<stdio.h>*/
 int	ft_isalnum (int c)
 {
 	if ((c > 65 && c < 90 ) || (c > 48 && c < 57) || (c > 97 && c < 122))
@@ -17,4 +18,7 @@ int	ft_isalnum (int c)
 	else
 		return (0);
 }
-
+/*int	main()
+{
+	printf("%d\n", ft_isalnum(47));
+}*/

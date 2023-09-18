@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gdel-cas <gdel-cas@student.42madrid>       +#+  +:+       +#+        */
+/*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 15:28:32 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/18 17:54:21 by gdel-cas         ###   ########.fr       */
+/*   Created: 2023/09/13 18:35:43 by gdel-cas          #+#    #+#             */
+/*   Updated: 2023/09/18 16:23:07 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*#include<stdio.h>*/
 
-int ft_isascii (int c)
+void	*memmove(void *dst, const void *src, size_t n)
 {
-	if (c > 0 && c < 127)
-		return (1);
-	else 
-		return (0);
+	
+
 }
 
-/*int	main()
-{
-	printf("%d\n", ft_isascii(126));
-}*/

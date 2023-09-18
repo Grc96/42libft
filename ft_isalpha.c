@@ -6,14 +6,20 @@
 /*   By: gdel-cas <gdel-cas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 13:38:39 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/12 17:06:32 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/09/18 17:43:08 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include<stdio.h>
 
 int	ft_isalpha(int c)
 {
-	if ((c > 65 && c < 90) || (c > 97 && c < 122))
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
 	else
 		return (0);
 }
+
+/*int	main()
+{
+	printf("%d\n", ft_isalpha('A'));
+}*/
