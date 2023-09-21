@@ -1,35 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/13 18:35:43 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/19 16:15:06 by gdel-cas         ###   ########.fr       */
+/*   Created: 2023/09/21 14:02:24 by gdel-cas          #+#    #+#             */
+/*   Updated: 2023/09/21 17:02:35 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <string.h>
+#include<stdio.h>
 
-void	*ft_memmove(void *dst, const void *src, size_t n)
+size_t	ft_strlcpy(char * dst, const char * src, size_t dstsize)
 {
-	size_t i;
-	char	*d;
-	char	*s;
+	size_t	i;
 
 	i = 0;
-	d = (char *)dst;
-	s = (char *)src;
-	if (d > s)
+	if (dstsize > 0)
 	{
-		while (n-- > 0)
-			d[n] = s[n];
-	}
-	else
-		while (i < n)
+		while (src[i] && i < (dstsize - 1))
 		{
-			d[i] = s[i];
+			dst[i] = src[i];
 			i++;
 		}
-return (dst)
+		dst[i] = 0;
+	}
+	return (i);
 }
+/*int	main()
+{
+	char	c[30] = "Hola";
+	char	b[] = "";
+	size_t	f = 5;
 
+	printf("%zu\n", ft_strlcpy(c, b, f));
+	//printf("%zu\n", strlcat(c, b, f));
+	printf("%s\n%s\n", c, b);
+return(0);
+}*/
