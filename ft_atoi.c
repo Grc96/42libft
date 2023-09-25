@@ -6,7 +6,7 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 17:04:06 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/25 16:32:01 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/09/25 16:48:00 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include<stdio.h>
@@ -39,9 +39,10 @@ int	ft_atoi(const char *str)
 	return (res * sig);
 }
 
-int	main()
+/*int	main()
 {
 	char 	str[] = "Hola mundo";
-	printf("%d\n", ft_atoi("-3435"));
-	printf("%d\n", atoi("-3435"));
-}
+	printf("%d\n", ft_atoi("0"));
+
+	printf("%d\n", atoi("0"));
+}*/
