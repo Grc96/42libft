@@ -6,11 +6,13 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 13:22:20 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/18 18:49:40 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/09/27 17:35:25 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include<stddef.h>
+#include "libft.h"
 #include<stdio.h>
+
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;

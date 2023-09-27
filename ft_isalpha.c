@@ -6,9 +6,10 @@
 /*   By: gdel-cas <gdel-cas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 13:38:39 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/18 17:43:08 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/09/27 17:25:31 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 #include<stdio.h>
 
 int	ft_isalpha(int c)

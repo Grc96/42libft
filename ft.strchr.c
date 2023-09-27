@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft.strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gdel-cas <gdel-cas@student.42madrid>       +#+  +:+       +#+        */
+/*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 16:05:59 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/27 17:49:45 by gdel-cas         ###   ########.fr       */
+/*   Created: 2023/09/27 14:46:58 by gdel-cas          #+#    #+#             */
+/*   Updated: 2023/09/27 15:38:46 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-/*#include<stdio.h>*/
-
-int	ft_isprint(int c)
+char	*strchr(const char *s, int c)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	else
-		return (0);
+	int	i;
+	
+	i = 0;
+	if (s[i] == '\0')
+		return('\0');
+	while (s[i] == (char)c)
 }
-
-/*int	main()
-{
-	printf("%d\n", ft_isprint(31));
-}*/

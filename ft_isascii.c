@@ -6,16 +6,17 @@
 /*   By: gdel-cas <gdel-cas@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 15:28:32 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/18 17:54:21 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/09/27 17:46:30 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 /*#include<stdio.h>*/
 
-int ft_isascii (int c)
+int	ft_isascii(int c)
 {
-	if (c > 0 && c < 127)
+	if (c >= 0 && c <= 127)
 		return (1);
-	else 
+	else
 		return (0);
 }
 
