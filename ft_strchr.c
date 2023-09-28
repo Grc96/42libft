@@ -6,23 +6,24 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 14:46:58 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/28 16:55:53 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/09/28 19:25:55 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include<stdio.h>
+#include"libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
-	
-	i = 0;
-	if (s[i] == '\0')
-		return(NULL);
-	if (s[i] == (char)c)
-		return(c);
+	while (*s != '\0')
+	{
+		if (*s == c)
+			return ((char *)s);
+		s++;
+	}
+	return (NULL);
 }
-int	main()
+/*int	main()
 {
 	char	c[10] = "hola";
-	printf("%c\n", *ft_strchr(c[2], 10 ));
-}
+	printf("%s\n", ft_strchr(c, 'o'));
+}*/
