@@ -6,9 +6,10 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 18:35:43 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/27 17:26:44 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/09/28 14:19:41 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t n)

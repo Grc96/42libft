@@ -6,7 +6,7 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 14:02:24 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/27 17:27:29 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/09/28 14:31:51 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <string.h>
@@ -27,7 +27,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		}
 		dst[i] = 0;
 	}
-	return (i);
+	return (ft_strlen(src));
 }
 /*int	main()
 {
