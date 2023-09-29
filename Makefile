@@ -20,6 +20,8 @@ SRCs = ft_bzero.c \
 	ft_toupper.c \
 	ft_atoi.c \
 	ft_strchr.c \
+	ft_strrchr.c \
+	ft_strncmp.c \
 
 
 OBJs = $(SRCs:.c=.o)
