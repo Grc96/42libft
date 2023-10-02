@@ -22,6 +22,7 @@ SRCs = ft_bzero.c \
 	ft_strchr.c \
 	ft_strrchr.c \
 	ft_strncmp.c \
+	ft_memcmp.c \
 
 
 OBJs = $(SRCs:.c=.o)

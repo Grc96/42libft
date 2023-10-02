@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/27 14:46:58 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/29 19:55:16 by gdel-cas         ###   ########.fr       */
+/*   Created: 2023/10/02 16:24:15 by gdel-cas          #+#    #+#             */
+/*   Updated: 2023/10/02 16:58:27 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<stdio.h>
 #include"libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;
+	unsigned char	*str1;
+	unsigned char	*str2;
 
+	str1 = (unsigned char *)s1;
+	str2 = (unsigned char *)s2;
 	i = 0;
-	while (s[i])
+	while (n--)
 	{
-		if (s[i] == c)
-			return ((char *)&s[i]);
+		if (str1[i] != str2[i])
+			return (str1[i] - str2[i]);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
-/*int	main()
-{
-	char	c[10] = "hola";
-	printf("%s\n", ft_strchr(c, 'o'));
-}*/
