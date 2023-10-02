@@ -4,7 +4,7 @@ RM = rm -f
 
 CFLAGS = -Wall -Wextra -Werror
 
-SRCs = ft_bzero.c \
+SRCs = 	ft_bzero.c \
 	ft_isalpha.c \
 	ft_isalnum.c \
 	ft_isascii.c \
@@ -23,6 +23,7 @@ SRCs = ft_bzero.c \
 	ft_strrchr.c \
 	ft_strncmp.c \
 	ft_memcmp.c \
+	ft_memchr.c \
 
 
 OBJs = $(SRCs:.c=.o)
