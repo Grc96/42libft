@@ -1,23 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/03 18:47:00 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/05 15:49:14 by gdel-cas         ###   ########.fr       */
+/*   Created: 2023/10/05 16:03:23 by gdel-cas          #+#    #+#             */
+/*   Updated: 2023/10/05 19:45:57 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	void	*ptr;
+	char	*c;
+	size_t	l;
 
-	ptr = (void *)malloc(count * size);
-	if (!ptr)
-		return (ptr);
-	ft_bzero(ptr, size * count);
-	return (ptr);
+	if (!s)
+		return (NULL);
+	if ((s && !*s) || (s && !len) || start >= ft_strlen(s))
+		return (ft_calloc(sizeof(char), 1));
+	if (len > ft_strlen(s))
+		len = ft_strlen(s) - start;
+	c = ft_calloc(sizeof(char), len + 1);
+	if (!c)
+		return (NULL);
+	l = 0;
+	while (l < len)
+		c[l++] = s[start++];
+	return (c);
 }

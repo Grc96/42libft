@@ -1,23 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/03 18:47:00 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/05 15:49:14 by gdel-cas         ###   ########.fr       */
+/*   Created: 2023/10/05 16:06:03 by gdel-cas          #+#    #+#             */
+/*   Updated: 2023/10/07 02:30:22 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
+#include <stdio.h>
 
-void	*ft_calloc(size_t count, size_t size)
+
+//substr
+/*int	main()
 {
-	void	*ptr;
+	char	*s = "Hola Mundo!";
+	char	*res;
 
-	ptr = (void *)malloc(count * size);
-	if (!ptr)
-		return (ptr);
-	ft_bzero(ptr, size * count);
-	return (ptr);
-}
+	res = ft_substr(s, 4, 7);
+	printf("%s\n", res);
+	free(res);
+	return (0);
+}*/
+
+//strjoin
+/*int	main()
+{
+	char	*c  = "Hola";
+	char	*b = " mundo!";
+	char	*res;
+
+	res = ft_strjoin(c, b);
+	printf("%s\n", res);
+	free(res);
+	res = 0;
+	return(0);
+}*/
+
+

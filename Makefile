@@ -22,22 +22,31 @@ SRCs = 	ft_bzero.c \
 	ft_strchr.c \
 	ft_strrchr.c \
 	ft_strncmp.c \
-	ft_strnstr.c
+	ft_strnstr.c \
 	ft_memcmp.c \
 	ft_memchr.c \
-
+	ft_calloc.c \
+	ft_strdup.c \
+	ft_substr.c \
+	ft_strjoin.c \
 
 OBJs = $(SRCs:.c=.o)
 
-all : $(NAME)
+all:	$(NAME)
 
-$(NAME) : $(OBJs)
+$(NAME):	$(OBJs)
 	ar rcs $(NAME) $(OBJs)
-	
-clean :
+
+%.o:	%.c
+	gcc $(CFLAGS) -c $< -o $@
+
+clean:
 	$(RM) $(OBJs)
 
-fclean : clean
+fclean:	clean
 	$(RM) $(NAME)
 
-re : fclean all
+re:	fclean all
+
+.PHONY: all clean fclean re
+.SILENT: all $(NAME) $(OBJs) clean fclean re
