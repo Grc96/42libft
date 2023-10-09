@@ -6,7 +6,7 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 16:06:03 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/07 02:30:22 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/10/09 21:17:56 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,21 @@
 	return(0);
 }*/
 
+/*int	main()
+{
+	char	*c = "lorem \n ipsum \t dolor \n sit \t amet";
+	char	*b = "te";
 
+	printf("%s\n", ft_strtrim(c, b));
+	return(0);
+}*/
+
+
+
+int	main()
+{
+	char	*a = "     ";
+	char	b = ' ';
+	ft_split(a, b);
+	return (0);
+}

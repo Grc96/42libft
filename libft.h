@@ -6,7 +6,7 @@
 /*   By: gdel-cas <gdel-cas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:54:30 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/06 23:45:39 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/10/09 19:13:11 by gdel-cas         ###   ########.fr       */
 /*   Updated: 2023/10/02 19:53:20 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -43,4 +43,7 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
 char    *ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1,  char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
+
 #endif
