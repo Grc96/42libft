@@ -6,7 +6,7 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 18:46:04 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/11 19:01:43 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/10/11 19:17:51 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -30,6 +30,5 @@ void	ft_putnbr_fd(int n, int fd)
 		else
 			ft_putchar_fd (n + '0', fd);
 	}
-	return;
-
+	return ;
 }

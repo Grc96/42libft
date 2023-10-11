@@ -6,11 +6,12 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 17:32:26 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/11 18:00:26 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/10/11 19:16:15 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);

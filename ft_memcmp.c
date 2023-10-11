@@ -6,14 +6,14 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 16:24:15 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/02 16:58:27 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/10/11 19:15:25 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include"libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*str1;
 	unsigned char	*str2;
 

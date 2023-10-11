@@ -6,7 +6,7 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 17:09:21 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/02 19:41:13 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/10/11 19:14:20 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include"libft.h"
@@ -18,9 +18,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	str = (void *)s;
-	
 	if (s == NULL)
-		return (NULL);;
+		return (NULL);
 	while (i < n)
 	{
 		if (str[i] == (char)c)
