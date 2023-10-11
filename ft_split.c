@@ -6,7 +6,7 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:04:52 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/09 21:56:22 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/10/11 16:45:47 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,20 +48,23 @@ char	**ft_split(char const *s, char c)
 {
 	char	**x;
 	size_t	j;
+	size_t	i;
 	
+	j = 0;
 	x = ft_calloc(ft_count(s, c) + 1, sizeof(char *));
 	if (!x)
 		return (NULL);
 	while (j < ft_count(s, c))
 	{
-		
-		while (s[j] == c)
+		i = 0;
+		while (s[i] == c)
 		{
-			j++;
+			i++;
 		}		
-		while(s[j] != c)
+		while(s[i] != c)
+			x[j][i] = s[i]
+		//	s[j] == x[0][0];
 
-			s[j] == x[0][0];
 	}
 	return (0);
 }
