@@ -35,6 +35,8 @@ SRCs = 	ft_bzero.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
 	ft_split.c \
+	ft_strmapi.c \
+	ft_striteri.c \
 
 OBJs = $(SRCs:.c=.o)
 

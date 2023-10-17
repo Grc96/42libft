@@ -1,32 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 13:22:20 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/17 16:39:42 by gdel-cas         ###   ########.fr       */
+/*   Created: 2023/10/17 17:39:14 by gdel-cas          #+#    #+#             */
+/*   Updated: 2023/10/17 18:14:10 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<stddef.h>
-#include "libft.h"
-#include<stdio.h>
 
-size_t	ft_strlen(const char *s)
+#include "libft.h"
+void	ft_striteri(char *s, void (*f)(unsigned int,char*))
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
-	while (s[i] != '\0')
+		while (s[i] != '\0')
 	{
+		(*f)(i, &s[i]);
 		i++;
 	}
-	return (i);
 }
-
-/*int	main()
-{
-	char	a[10] = "mamahuevo";
-	printf("%zu\n", ft_strlen(a));
-}*/

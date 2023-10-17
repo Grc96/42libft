@@ -6,7 +6,7 @@
 /*   By: gdel-cas <gdel-cas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:54:30 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/13 16:55:50 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/10/17 17:50:48 by gdel-cas         ###   ########.fr       */
 /*   Updated: 2023/10/02 19:53:20 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -49,4 +49,6 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char    **ft_split(char const *s, char c);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 #endif

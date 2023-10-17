@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 13:22:20 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/17 16:39:42 by gdel-cas         ###   ########.fr       */
+/*   Created: 2023/10/17 15:26:16 by gdel-cas          #+#    #+#             */
+/*   Updated: 2023/10/17 16:59:26 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<stddef.h>
+
 #include "libft.h"
-#include<stdio.h>
 
-size_t	ft_strlen(const char *s)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	i;
+	char	*fin;
+	int	i;
 
+	if (!s || !f)
+		return (NULL);
+	fin = ft_calloc(ft_strlen(s) + 1, sizeof(char));
+	if (!fin)
+		return (NULL);
+	ft_strlcpy(fin , s, ft_strlen(s) + 1);
 	i = 0;
-	while (s[i] != '\0')
+	while (fin[i] != '\0')
 	{
+		fin[i] = (*f)(i, fin[i]);
 		i++;
 	}
-	return (i);
+	return (fin);
 }
-
-/*int	main()
-{
-	char	a[10] = "mamahuevo";
-	printf("%zu\n", ft_strlen(a));
-}*/

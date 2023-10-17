@@ -6,7 +6,7 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 16:06:03 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/13 19:24:29 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/10/17 15:39:35 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,16 +53,19 @@
 
 int	main()
 {
-	char	*s = "hola       que tal";
+	char	*s = "   lorem   ipsum dolor     sit amet, consectetur   adipiscing elit. Sed non risus. Suspendisse   ";
 	char	c = ' ';
 	char	**r;
+	int		i;
 	
+	i = 0;
 	r = ft_split(s, c);
 	if (!r)
 		return (0);
-	printf("%s\n", r[0]);
-	printf("%s\n", r[1]);
-	printf("%s\n", r[2]);
-	printf("%s\n", r[3]);
+	while (r[i])
+	{
+		printf("%s\n",r[i]);
+		i++;
+	}
 	return (0);
 }
