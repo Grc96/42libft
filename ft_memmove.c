@@ -6,7 +6,7 @@
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 18:35:43 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/09/28 14:19:41 by gdel-cas         ###   ########.fr       */
+/*   Updated: 2023/10/13 16:07:48 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	i = 0;
 	d = (char *)dst;
 	s = (char *)src;
+	if (!dst && !src)
+		return (NULL);
 	if (d > s)
 	{
 		while (n-- > 0)
