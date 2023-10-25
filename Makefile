@@ -37,6 +37,9 @@ SRCs = 	ft_bzero.c \
 	ft_split.c \
 	ft_strmapi.c \
 	ft_striteri.c \
+	ft_itoa.c \
+	ft_lstnew_bonus.c \
+	ft_lstadd_front.c \
 
 OBJs = $(SRCs:.c=.o)
 

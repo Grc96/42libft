@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gdel-cas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 13:55:17 by gdel-cas          #+#    #+#             */
-/*   Updated: 2023/10/18 17:12:22 by gdel-cas         ###   ########.fr       */
+/*   Created: 2023/10/20 18:37:48 by gdel-cas          #+#    #+#             */
+/*   Updated: 2023/10/20 18:56:02 by gdel-cas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	char	*str;
-	
-	str = (char *)ft_calloc(ft_strlen(s1) + 1, sizeof(char));
-	if (!str)
-		return (NULL);
-	ft_strlcpy(str, s1, ft_strlen(s1) + 1);
-	return (str);
+	t_list	*n;
+
+	n = *lst;
+	*lst = new;
+	new->next = n;
 }
